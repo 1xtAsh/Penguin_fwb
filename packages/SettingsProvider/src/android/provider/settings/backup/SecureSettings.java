@@ -245,6 +245,7 @@ public class SecureSettings {
         Settings.Secure.SEARCH_PRESS_HOLD_NAV_HANDLE_ENABLED,
         Settings.Secure.SEARCH_LONG_PRESS_HOME_ENABLED,
         Settings.Secure.DOZE_ON_CHARGE,
-        Settings.Secure.SECURE_LOCKSCREEN_QS_DISABLED
+        Settings.Secure.SECURE_LOCKSCREEN_QS_DISABLED,
+        Settings.Secure.POWER_MENU_HIDE_ON_SECURE
     };
 }
