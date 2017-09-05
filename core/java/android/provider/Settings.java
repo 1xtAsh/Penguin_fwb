@@ -5894,6 +5894,27 @@ public final class Settings {
         public static final String SCREENSHOT_SHUTTER_SOUND = "screenshot_shutter_sound";
 
         /**
+         * Whether the phone vibrates on call connect
+         * @hide
+         */
+        @Readable
+        public static final String VIBRATE_ON_CONNECT = "vibrate_on_connect";
+
+        /**
+         * Whether the phone vibrates on call waiting
+         * @hide
+         */
+        @Readable
+        public static final String VIBRATE_ON_CALLWAITING = "vibrate_on_callwaiting";
+
+        /**
+         * Whether the phone vibrates on disconnect
+         * @hide
+         */
+        @Readable
+        public static final String VIBRATE_ON_DISCONNECT = "vibrate_on_disconnect";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -6060,7 +6081,7 @@ public final class Settings {
          */
         @Readable
         public static final String NOTIFICATION_VIBRATION_PATTERN = "notification_vibration_pattern";
-        
+
         /**
          * Wheter to show network traffic indicator in statusbar
          * @hide
@@ -6078,16 +6099,16 @@ public final class Settings {
          */
         public static final String VOLUME_MEDIA_OUTPUT_TOGGLE = "volume_media_output_toggle";
 
-        /** 
-         * Back gesture activation height 
+        /**
+         * Back gesture activation height
          * n/o sixths reduced in height (0 = nothing, default)
          * value should not exceed 5
-         * @hide 
+         * @hide
          */
         @Readable
         public static final String BACK_GESTURE_HEIGHT = "back_gesture_height";
 
-        /** 
+        /**
          * Whether to show the battery info on the lockscreen while charging
          * @hide
          */
@@ -6275,6 +6296,9 @@ public final class Settings {
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC);
             PRIVATE_SETTINGS.add(LOCKSCREEN_BATTERY_INFO);
+            PRIVATE_SETTINGS.add(VIBRATE_ON_CONNECT);
+            PRIVATE_SETTINGS.add(VIBRATE_ON_CALLWAITING);
+            PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
         }
 
         /**
@@ -12114,7 +12138,7 @@ public final class Settings {
         @Readable
         public static final String WINDOW_IGNORE_SECURE = "window_ignore_secure";
 
-        
+
         /**
          * Control whether Settings should use the new layout
          * @hide
@@ -18520,7 +18544,7 @@ public final class Settings {
          * @hide
          */
         public static final String RESTRICTED_NETWORKING_MODE = "restricted_networking_mode";
-        
+
         /**
          * Control whether application downgrade is allowed.
          * @hide

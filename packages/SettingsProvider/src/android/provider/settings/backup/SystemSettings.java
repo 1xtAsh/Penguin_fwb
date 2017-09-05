@@ -109,5 +109,8 @@ public class SystemSettings {
         Settings.System.NETWORK_TRAFFIC_STATE,
         Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
         Settings.System.LOCKSCREEN_BATTERY_INFO,
+        Settings.System.VIBRATE_ON_CONNECT,
+        Settings.System.VIBRATE_ON_CALLWAITING,
+        Settings.System.VIBRATE_ON_DISCONNECT,
     };
 }
