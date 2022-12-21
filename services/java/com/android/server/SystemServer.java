@@ -1495,7 +1495,7 @@ public final class SystemServer implements Dumpable {
                 PackageManager.FEATURE_VR_MODE_HIGH_PERFORMANCE);
 
         // For debugging RescueParty
-        if (Build.IS_DEBUGGABLE && SystemProperties.getBoolean("debug.crash_system", false)) {
+        if (Build.IS_ENG && SystemProperties.getBoolean("debug.crash_system", false)) {
             throw new RuntimeException();
         }
 
@@ -1707,7 +1707,7 @@ public final class SystemServer implements Dumpable {
 
             mSystemServiceManager.startService(ActivityTriggerService.class);
 
-            if (Build.IS_DEBUGGABLE && ProfcollectForwardingService.enabled()) {
+            if (Build.IS_ENG && ProfcollectForwardingService.enabled()) {
                 t.traceBegin("ProfcollectForwardingService");
                 mSystemServiceManager.startService(ProfcollectForwardingService.class);
                 t.traceEnd();
